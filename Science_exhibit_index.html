@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Science Centre Exhibit Index</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f5f5; /* Neutral light background */
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        header {
+            background: linear-gradient(to right, #3A1C71, #D76D77, #FFAF7B); /* Modern gradient */
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        header p {
+            margin: 0;
+            font-size: 1.2em;
+            font-style: italic;
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .exhibit-list {
+            background-color: rgba(255, 255, 255, 0.8); /* Softer white with transparency */
+            padding: 30px;
+            box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+            border-radius: 10px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+        }
+
+        .exhibit-list h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #3A1C71; /* Match header gradient */
+        }
+
+        .exhibit-list ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .exhibit-list ul li {
+            margin: 15px 0;
+        }
+
+        .exhibit-list ul li a {
+            text-decoration: none;
+            font-size: 1.3em;
+            color: #007ACC; /* Bright link color */
+            transition: color 0.3s ease;
+        }
+
+        .exhibit-list ul li a:hover {
+            color: #005b99; /* Darker link color on hover */
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #3A1C71; /* Deep footer color matching header */
+            color: #fff;
+        }
+
+        /* Styling the image for the background */
+        .exhibit-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 0;
+            opacity: 0.3; /* Make background subtle */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Hazaribag Science Center</h1>
+        <p>Enjoy Wonders Of Science  Through Experience </p>
+    </header>
+
+    <main>
+        <img src="images/science museum.jpeg" class="exhibit-image">
+        <section class="exhibit-list">
+            <h2>Science Centre  Exhibits</h2>
+            <ul>
+                <li><a href="environ.html" target="_blank"> Earth & Environment Gallery</a></li>
+                <li><a href="hbh.html" target="_blank">Human Body & Health Gallery </a></li>
+                <li><a href="agri.html" target="_blank">Agriculture & Innovation Gallery </a></li>
+                <li><a href="spaceexp.html" target="_blank"> Space Exploration Gallery</a></li>
+                <li><a href="physicsf.html" target="_blank">Physics & Forces Gallery  </a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Hazaribag Science Center.</p>
+             <p>All rights reserved.</p>
+             <p> Designed  by ROHIT KUMAR</p>
+    </footer>
+</body>
+</html>

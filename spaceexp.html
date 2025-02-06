@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Renewable Energy</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-image: url(images/science.avif);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            color: #2d2d2d; /* Darker text for better readability */
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: linear-gradient(to right, #3A1C71, #D76D77, #FFAF7B); /* Gradient for a modern look */
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        p {
+            font-size: 1.2em;
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .exhibit-detail {
+            max-width: 800px;
+            margin: 50px auto;
+            text-align: center;
+            background-color: #fff; /* White background for better contrast */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .exhibit-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .exhibit-detail h2 {
+            text-align: center;
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #3A1C71; /* Match header color */
+        }
+
+        .exhibit-detail p {
+            text-align: justify;
+            font-size: 1.2em;
+            line-height: 1.6;
+            color: #555; /* Softer text color for body text */
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #3A1C71; /* Deep color matching header */
+            color: #fff;
+        }
+
+        /* Styling for the Back to Main Page button */
+        .back-button {
+            margin-top: 20px;
+            padding: 12px 24px;
+            background-color: #FF7F50; /* Coral for a pop of color */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.1em;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-button:hover {
+            background-color: #FF6347; /* Darker coral for hover effect */
+        }
+        /* Media Query for Mobile Screens */
+        @media (max-width: 600px) {
+            .exhibit-detail {
+                margin: 20px;
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Space Exploration Gallery </h1>
+    </header>
+
+    <main>
+        <section class="exhibit-detail">
+            <h2>Space Exploration  Hall</h2>
+            <img src="images\spacepic.jpg" alt="SPACE EXP" class="exhibit-image">
+            
+            <p>Theme: The mysteries of the universe and space travel.</p>
+            <p>Planetarium: A dome where visitors can experience the night sky, planets, and constellations.</p>
+            <p>Rockets & Satellites Display: Models of ISRO rockets and satellites with information on space missions.</p>
+            <p>Mars Exploration Simulation: A VR-based interactive simulation where visitors can explore the surface of Mars.</p>
+            
+
+            <!-- Back to Main Page Link -->
+            <button class="back-button" onclick="location.href='Science_exhibit_index.html'">Back to Main Page</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Hazaribag Science Center.</p>
+             <p>All rights reserved.</p>
+             <p> Designed  by ROHIT KUMAR</p>
+    </footer>
+</body>
+</html>
